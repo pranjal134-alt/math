@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+
 using namespace std;
 int main()
 {
@@ -22,6 +24,8 @@ int main()
     }
     // cout << a.front() << endl;
     // cout << a.back() << endl;
+    reverse(a.begin(), a.end());
+    sort(a.begin(), a.end());
 
     return 0;
 }
